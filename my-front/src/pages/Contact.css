@@ -1,0 +1,99 @@
+/* General styling for the contact container */
+.contact-container {
+  max-width: 500px; /* Smaller form width */
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the form title */
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* General form group styling */
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Input field styling */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect on inputs */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #4CAF50; /* Green highlight on focus */
+}
+
+/* Textarea styling */
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Submit button styling */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Button focus outline for accessibility */
+.submit-btn:focus {
+  outline: 2px solid #4CAF50;
+}
+
+/* Adjusting the form container for small screens */
+@media (max-width: 500px) {
+  .contact-container {
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+  }
+}

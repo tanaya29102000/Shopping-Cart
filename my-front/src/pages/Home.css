@@ -1,0 +1,107 @@
+/* src/pages/Home.css */
+
+.home-container {
+  padding: 0 1rem;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 100%; /* Ensure text container takes full width */
+  margin-top: 300px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.shop-now-btn {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 0 auto; /* Center the button horizontally */
+  display: block; /* Ensures the margin auto works */
+}
+
+.shop-now-btn:hover {
+  background-color: #e5533f;
+}
+
+.featured-brands {
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.featured-brands h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.brand-card {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.brand-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .brand-card {
+    width: 120px;
+    height: 120px;
+  }
+}

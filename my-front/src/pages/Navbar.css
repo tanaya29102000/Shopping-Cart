@@ -1,0 +1,90 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #6f1fcf;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-logo {
+  flex: 1;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+.navbar-cart {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-actions {
+  margin-right: 20px;
+  font-size: 1rem;
+}
+
+.navbar-actions span {
+  margin-right: 10px;
+}
+
+.navbar-actions a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-actions a:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+.navbar-cart a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  margin-left: 20px;
+}
+
+.navbar-cart a:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+.icon-badge,
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #e74c3c; /* Red color for badges */
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}

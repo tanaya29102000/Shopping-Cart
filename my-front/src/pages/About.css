@@ -1,0 +1,60 @@
+/* src/pages/About.css */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.about-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 2rem 1rem;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .about-image {
+    flex-direction: column;
+    align-items: center;
+  }
+}
